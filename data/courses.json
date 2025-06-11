@@ -1,0 +1,254 @@
+{
+  "categories": [
+    {
+      "name": "PARAMEDICAL COURSE",
+      "courses": [
+        { "id": 1, "name": "Certificate in Laboratory Assistant", "qualification": "8 Pass", "duration": "6 Month" },
+        { "id": 2, "name": "Certificate in Clinical Research", "qualification": "8 Pass", "duration": "6 Month" },
+        { "id": 3, "name": "Certificate in Operation Theatre(OT) Technician", "qualification": "8 Pass", "duration": "6 Month" },
+        { "id": 5, "name": "Certificate in Health & Sanitary Inspector", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 6, "name": "Certificate in Ambulance Technician", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 7, "name": "Certificate in Hospital Administration", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 8, "name": "Certificate in Nutrition & Health Education", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 9, "name": "Certificate in Health information Management", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 10, "name": "Certificate in Pharmacy Assistant", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 11, "name": "Certificate in Operation Theatre Technology", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 15, "name": "Certificate in Hospital Management", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 16, "name": "Certificate in Dental Technology", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 17, "name": "Certificate in Medical Lab Technology", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 18, "name": "Certificate in Hospital Assistance", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 19, "name": "Certificate in Emergency Medical Technician", "qualification": "SSLC Pass", "duration": "1 Year" },
+        { "id": 20, "name": "Diploma in Ambulance Technician", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 21, "name": "Diploma in Hospital Administration", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 22, "name": "Diploma in Physiotherapy Technology", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 23, "name": "Diploma in Pharmacy Assistant", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 25, "name": "Diploma in Dialysis Technician", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 29, "name": "Diploma in Health Assistant", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 30, "name": "Diploma in Medical Laboratory Technology", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 31, "name": "Diploma in Hospital Equipment Management", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 32, "name": "Diploma in Hospital Assistant", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 33, "name": "Diploma in Hospital management", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 34, "name": "Diploma in Patient care and First Aid", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 35, "name": "Diploma in Emergency Medical Technical", "qualification": "SSLC Pass", "duration": "2 Year" },
+        { "id": 36, "name": "Diploma in Dressing", "qualification": "HSC Pass", "duration": "1 Year" },
+        { "id": 37, "name": "Diploma in Aneshesia", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 38, "name": "Diploma in Dental Hygiene", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 39, "name": "Certificate in Ultrosonography(USG)", "qualification": "HSC Pass", "duration": "1 Year" },
+        { "id": 40, "name": "DMLT(Diploma in Medical Lap Technology's", "qualification": "Pass", "duration": "1& 2 Year" },
+        { "id": 41, "name": "M.D(AM)", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 42, "name": "Bachelor in Electro Homeopathy &Medical Surgery", "qualification": "HSC", "duration": "4 Year" },
+        { "id": 43, "name": "Anasthesia Assistant", "qualification": "HSC Pass", "duration": "1Year" },
+        { "id": 44, "name": "BRT(Bachelor in Medical Radiography Technology", "qualification": "HSC Pass", "duration": "3Year" },
+        { "id": 45, "name": "(DHW)Dental Health Worker", "qualification": "HSC Pass", "duration": "1Year" },
+        { "id": 46, "name": "B.A.M.S(Alternative Medicine) (CMS & ED) Community medical service &Essential Drugs (122 Allopathic Medicines course Under WHO Policy", "qualification": "HSC Pass", "duration": "4Year" },
+        { "id": 47, "name": "T.B Health Visitor", "qualification": "HSC Pass", "duration": "1Year" },
+        { "id": 48, "name": "Diploma in Ayurvedic Pharmacy", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 49, "name": "B.P.T(Bachelor of Physiotherapy)", "qualification": "HSC Pass", "duration": "4Year" },
+        { "id": 50, "name": "Dental Nursing", "qualification": "HSC Pass", "duration": "1 Year" },
+        { "id": 51, "name": "Bachelor of Physiotherapy", "qualification": "HSC Pass", "duration": "4.5 Year" },
+        { "id": 52, "name": "B.S.C(M.L.T)", "qualification": "HSC Pass", "duration": "3 Year" },
+        { "id": 53, "name": "B.S.C (O.T.T)", "qualification": "HSC Pass", "duration": "3 Year" },
+        { "id": 54, "name": "Diploma in Ayurvedic Nursing & Panchakarma Therapis", "qualification": "HSC Pass", "duration": "1 Year" },
+        { "id": 55, "name": "Dental Therapist", "qualification": "HSC Pass", "duration": "3 Year" },
+        { "id": 56, "name": "Diploma in Dental Lab Technician", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 57, "name": "Diploma in Ophthalmic Assistant", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 58, "name": "Nanny Care", "qualification": "HSC Pass", "duration": "6 Months" },
+        { "id": 59, "name": "Health Sanitary Inspector", "qualification": "HSC Pass", "duration": "1 Year" },
+        { "id": 60, "name": "Diploma in Veterinary & Live stock DevelopmentAssistant(VLDA)", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 61, "name": "Diploma in Veterinary Pharmacist", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 62, "name": "Homoepathy Pharmacy", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 63, "name": "Dialysis Technician", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 64, "name": "Diploma in Nursing Assistant", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 65, "name": "Diploma in X-Ray and ECG Tech", "qualification": "HSC Pass", "duration": "1 Year" },
+        { "id": 66, "name": "Diploma in Operation Theatre Technology's", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 67, "name": "DMRT(Diploma in Medical Radiography", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 68, "name": "D.P.T(Diploma in Physiotherapy", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 69, "name": "M.P.H.W (Female Multipurpose healthworker)", "qualification": "HSC Pass", "duration": "2 Year" },
+        { "id": 70, "name": "M.P.H.W (male Multipurpose health worker)", "qualification": "HSC Pass", "duration": "1 Year" }
+      ]
+    },
+    {
+      "name": "ALTERNATIVE MEDICINE COURSES",
+      "subcategories": [
+        {
+          "name": "Acupuncture Courses",
+          "courses": [
+            { "id": 71, "name": "Certificate in Addiction by Acupuncture", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 72, "name": "Certificate in Holography and Acupuncture", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 73, "name": "Certificate in Acupuncture management", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 74, "name": "Diploma in Acupuncture", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 75, "name": "Certificate in magneto Therapy and Acupuncture", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 76, "name": "Certificate in stress management byAcupuncture", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 77, "name": "Certificate in De- Addiction Acupuncture", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 78, "name": "Master Diploma in Acupuncture Therapy", "qualification": "8 Pass", "duration": "1 year" },
+            { "id": 79, "name": "Diploma in Acupuncture Therapy", "qualification": "SSLC Pass", "duration": "1 year" },
+            { "id": 80, "name": "Diploma in Acupuncture & Varma", "qualification": "SSLC Pass", "duration": "1 year" },
+            { "id": 81, "name": "Master Diploma in Acupuncture Varma", "qualification": "SSLC Pass", "duration": "1 year" },
+            { "id": 82, "name": "Master Diploma in Acupuncture", "qualification": "SSLC Pass", "duration": "1 year" },
+            { "id": 83, "name": "Basic Certificate in Acupuncture Education", "qualification": "SSLC Pass", "duration": "1 year" }
+          ]
+        },
+        {
+          "name": "Ayurveda Courses",
+          "courses": [
+            { "id": 84, "name": "Certificate in Diabetic Care & Diet by Ayurveda", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 85, "name": "Certificate in Diabetic Care & Diet by Ayurveda", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 86, "name": "Certificate in Arthritic Care & Diet by Ayurveda", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 87, "name": "Certificate in Spa Massage by Ayurveda", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 88, "name": "Certificate in Ayurveda sexual medicine", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 89, "name": "Certificate in Ayurveda massage treatment", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 90, "name": "Certificate in Ayurveda Nursing &Panchkarma Therapy", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 91, "name": "Certificate in Ayurveda Nursing Pharmacy", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 92, "name": "Certificate in Arthiritic care & Diet by Ayurveda", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 93, "name": "Certificate in Ayurvedic Beauty care", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 94, "name": "Certificate courses in Siddha Nursing Assistant", "qualification": "SSLC Pass", "duration": "1 year" },
+            { "id": 95, "name": "Diploma in Ayurvedic Beauty care", "qualification": "SSLC Pass", "duration": "1 year" },
+            { "id": 96, "name": "Diploma in Clinical Siddha Medicine", "qualification": "SSLC Pass", "duration": "2 year" },
+            { "id": 97, "name": "Diploma in Herbal Medicine", "qualification": "SSLC Pass", "duration": "2 year" },
+            { "id": 98, "name": "Diploma in Siddha Ayurvedic", "qualification": "SSLC Pass", "duration": "2 year" }
+          ]
+        },
+        {
+          "name": "Siddha Courses",
+          "courses": [
+            { "id": 99, "name": "Certificate in Siddha Food Production", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 100, "name": "Certificate in Skin care Siddha", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 101, "name": "Certificate in hair fall management by Herbals", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 102, "name": "Certificate in Siddha Food Production", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 103, "name": "Diploma in Traditional Medicine", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 104, "name": "Diploma in Traditional Siddha", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 105, "name": "Diploma in Siddha Medicine & Science", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 106, "name": "Diploma in Siddha", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 107, "name": "Master Diploma in Siddha", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 108, "name": "Diploma in Herbal Siddha Medicine", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 109, "name": "Diploma in Clinical Siddha Medicine", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 110, "name": "Diploma in Siddha & Ayurveda", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 111, "name": "Diploma in Clinical Siddha medicine", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 112, "name": "Diploma in Herbal Medicine", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 113, "name": "Diploma in Siddha Medicine & Science", "qualification": "SSLC Pass", "duration": "2 Year" }
+          ]
+        },
+        {
+          "name": "Unani Courses",
+          "courses": [
+            { "id": 114, "name": "Certificate of business Unani", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 115, "name": "Certificate of Advance Unani", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 116, "name": "Certificate of Unani sexual Medicine", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 117, "name": "Diploma in Unani Medicine Science", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 118, "name": "Diploma in Unani", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 119, "name": "Diploma in Unani for kidney Diaseases", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 120, "name": "Master Diploma in Unani", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 121, "name": "Diploma in Unani Pharmacy", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 122, "name": "Master Diploma in Unani Medicine", "qualification": "SSLC Pass", "duration": "1 Year" }
+          ]
+        },
+        {
+          "name": "Naturopathy Courses",
+          "courses": [
+            { "id": 123, "name": "Certificate in Energy Therapy", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 124, "name": "Certificate in Herbs", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 125, "name": "Certificate in Hydro Therapy", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 126, "name": "Certificate in Drug store Management", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 127, "name": "Certificate in Energy Therapy", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 128, "name": "Certificate in Diagnosing in natural science", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 129, "name": "Certificate in Herbal Drunk Manufacturing", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 130, "name": "Diploma in integrative Alternative Therapy", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 131, "name": "Master Diploma in Naturopathy Science", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 132, "name": "Diploma in Hypnotherapy", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 133, "name": "Diploma in Electropathy", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 134, "name": "Diploma in Naturopathy", "qualification": "SSLC Pass", "duration": "2 Year" }
+          ]
+        },
+        {
+          "name": "Yoga Courses",
+          "courses": [
+            { "id": 135, "name": "Certificate in Yoga Therapy", "qualification": "8 Pass", "duration": "3 Month" },
+            { "id": 136, "name": "Certificate in Yoga Psychology", "qualification": "8 Pass", "duration": "3 Month" },
+            { "id": 137, "name": "Certificate in Yoga", "qualification": "8 Pass", "duration": "3 Month" },
+            { "id": 138, "name": "Certificate in Yoga Education & Yoga Studies", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 139, "name": "Certificate in Yoga and Naturopathy Science", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 140, "name": "Certificate in Practical Yoga Nature care", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 141, "name": "Certificate in Breathing Techniques", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 142, "name": "Certificate in Mind Memory &Personality Development", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 143, "name": "Certificate in Energy Healing & Training", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 144, "name": "Diploma in Yoga Teacher", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 145, "name": "Master Diploma in Yoga", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 146, "name": "Diploma in Yoga Nature care", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 147, "name": "Diploma in Yoga Nature care", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 148, "name": "Diploma in Yoga", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 149, "name": "Diploma in Yoga Psychology", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 150, "name": "Diploma in Yoga therapy", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 151, "name": "Diploma in Yoga & Naturopathy Science ion &Yogic Studies", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 152, "name": "Diploma in Yoga therapy", "qualification": "SSLC Pass", "duration": "2 Year" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TECHNICAL TRAINING EDUCATION COURSE",
+      "subcategories": [
+        {
+          "name": "FIRE AND SAFTY SECTOR",
+          "courses": [
+            { "id": 153, "name": "Certificate in Assistant Fire Operator", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 154, "name": "Certificate in Fire and Rescue Operator", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 155, "name": "Certificate in Fire Technician", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 156, "name": "Certificate in Fire & Safety Engineering Techniques", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 157, "name": "Certificate in Industrial Safety Engineering", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 158, "name": "Certificate in Accident Investigation", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 159, "name": "Certificate in Fire-Aid and Basic life Support", "qualification": "8 Pass", "duration": "6 Month" },
+            { "id": 160, "name": "Certificate in Construction Safety Management", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 161, "name": "Certificate in Fire & Industrial Safety Management", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 162, "name": "Certificate in Industrial Safety", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 163, "name": "Certificate in Fire Man Technician", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 164, "name": "Certificate in Health, Safety Environment Management", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 165, "name": "Certificate in Health, Environment & Safety Engineering", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 166, "name": "Certificate in Electrical Safety", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 167, "name": "Certificate in Material Handling Safety Manual and Mechanical", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 168, "name": "Diploma in Construction Safety Management", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 169, "name": "Diploma in Fire & Industrial Safety Management", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 170, "name": "Diploma in Industrial Safety", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 171, "name": "Diploma in Fire Man Technician", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 172, "name": "Diploma in Fire & Industrial Safety Management", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 173, "name": "Diploma in Environment Safety Engineering", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 174, "name": "Diploma in Electrical Safety", "qualification": "SSLC Pass", "duration": "2 Year" }
+          ]
+        },
+        {
+          "name": "Automobile sector (Technical Course)",
+          "courses": [
+            { "id": 175, "name": "Certificate in Basic Automotive Service", "qualification": "8 Pass", "duration": "3 Months" },
+            { "id": 176, "name": "Certificate in Repair & Overhauling of 2 wheelers Motor cycle", "qualification": "8 Pass", "duration": "3 Months" },
+            { "id": 177, "name": "Certificate in Repair & Overhauling of Engine Systems (Petrol/Diesel)", "qualification": "8 Pass", "duration": "3 Months" },
+            { "id": 178, "name": "Certificate in Minor Repair of Auto body", "qualification": "8 Pass", "duration": "3 Months" },
+            { "id": 179, "name": "Certificate in Auto body Painting", "qualification": "8 Pass", "duration": "3 Months" },
+            { "id": 180, "name": "Certificate in Repair & Overhauling of Auto electrical System", "qualification": "8 Pass", "duration": "3 Months" },
+            { "id": 181, "name": "Certificate in Spray painter", "qualification": "8 Pass", "duration": "6 Months" },
+            { "id": 182, "name": "Certificate in Planet Manteca Technician", "qualification": "8 Pass", "duration": "6 Months" },
+            { "id": 183, "name": "Certificate in Diesel fuel system service mechanic", "qualification": "8 Pass", "duration": "6 Months" },
+            { "id": 184, "name": "Certificate in Car A/C Mechanic", "qualification": "8 Pass", "duration": "6 Months" },
+            { "id": 185, "name": "Certificate in Crane Operation & Maintenance", "qualification": "8 Pass", "duration": "6 Months" },
+            { "id": 186, "name": "Certificate in Operation of Maintenance of Hydraulic Machines", "qualification": "8 Pass", "duration": "6 Months" },
+            { "id": 187, "name": "Certificate in Automobile Engineering", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 188, "name": "Certificate in Fork lift Driving cum maintenance", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 189, "name": "Certificate in CNC machine Operation(Turning & Milling) intendance", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 190, "name": "Certificate in CNC Programmer", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 191, "name": "Certificate in Automobile Electronics Technology", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 192, "name": "Certificate in inspector of Auto Manufacturing Industry", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 193, "name": "Certificate in Welder", "qualification": "SSLC Pass", "duration": "1 Year" },
+            { "id": 194, "name": "Diploma in Four Wheeler Mechanism", "qualification": "SSLC Pass", "duration": "2 Year" },
+            { "id": 195, "name": "Diploma in Automobile Engineering Techniques", "qualification": "SSLC Pass", "duration": "2 Year" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SECONDARY EDUCATION COURSES",
+      "courses": [
+        { "id": 550, "name": "Elementary Education", "qualification": "Open", "duration": "Varies" },
+        { "id": 551, "name": "Secondary Education", "qualification": "Open", "duration": "Varies" },
+        { "id": 552, "name": "Senior Secondary Education", "qualification": "Open", "duration": "Varies" }
+      ]
+    }
+  ]
+}

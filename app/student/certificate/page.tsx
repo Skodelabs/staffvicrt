@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Select, SelectOption } from '@/components/ui/select';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Form, FormField, FormLabel, FormDescription, FormMessage } from '@/components/ui/form';
 import { FileUpload } from '@/components/ui/file-upload';
 import { useRouter } from 'next/navigation';
@@ -173,16 +173,20 @@ export default function CertificateUpload() {
             <FormField>
               <FormLabel>Certificate Type <span className="text-red-500">*</span></FormLabel>
               <Select 
-                name="certificateType"
                 value={formData.certificateType}
-                onChange={handleInputChange}
-                required
+                onValueChange={(value) => {
+                  setFormData(prev => ({ ...prev, certificateType: value }));
+                }}
               >
-                <SelectOption value="">Select certificate type</SelectOption>
-                <SelectOption value="academic">Academic Certificate</SelectOption>
-                <SelectOption value="professional">Professional Certificate</SelectOption>
-                <SelectOption value="language">Language Proficiency</SelectOption>
-                <SelectOption value="other">Other</SelectOption>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select certificate type" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="academic">Academic Certificate</SelectItem>
+                  <SelectItem value="professional">Professional Certificate</SelectItem>
+                  <SelectItem value="language">Language Proficiency</SelectItem>
+                  <SelectItem value="other">Other</SelectItem>
+                </SelectContent>
               </Select>
             </FormField>
             <FormField>

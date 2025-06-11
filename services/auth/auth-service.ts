@@ -1,8 +1,6 @@
-// Authentication service using MongoDB
-import connectToDatabase from '@/utils/db';
-import Staff from '@/models/Staff';
-import mongoose from 'mongoose';
-import { IStaff } from '@/models/Staff';
+// Authentication service
+// Import types only for type checking
+import type { IStaff } from '@/models/Staff';
 
 export interface LoginCredentials {
   email: string;
@@ -26,57 +24,63 @@ export const authService = {
   // Login function
   login: async (credentials: LoginCredentials): Promise<AuthResponse> => {
     try {
-      // Connect to the database
-      await connectToDatabase();
-      
-      // Get Staff model (handles both client and server side)
-      let staffModel: mongoose.Model<IStaff>;
-      if (typeof (Staff as any).getStaffModel === 'function') {
-        staffModel = await (Staff as any).getStaffModel();
-      } else {
-        staffModel = Staff as mongoose.Model<IStaff>;
-      }
-      
-      // Find user by email and include the password field
-      const user = await staffModel.findOne({ email: credentials.email }).select('+password');
-      
-      // Check if user exists
-      if (!user) {
-        return {
-          success: false,
-          message: 'Invalid email or password'
-        };
-      }
-      
-      // Check if password matches
-      const isMatch = await user.matchPassword(credentials.password);
-      
-      if (!isMatch) {
-        return {
-          success: false,
-          message: 'Invalid email or password'
-        };
-      }
-      
-      // Generate a token (we'll use a simple one for now)
-      const token = `auth-token-${Math.random().toString(36).substring(2, 15)}`;
-      
-      // Save token to localStorage (in client component)
+      // In a client-side environment, we need to call an API endpoint instead of using Mongoose directly
       if (typeof window !== 'undefined') {
-        localStorage.setItem('auth-token', token);
+        // Call the login API endpoint
+        const response = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(credentials),
+        });
+        
+        const data = await response.json();
+        
+        if (!data.success) {
+          return {
+            success: false,
+            message: data.message || 'Invalid email or password'
+          };
+        }
+        
+        // Save token to localStorage
+        localStorage.setItem('auth-token', data.token);
         
         // Set a cookie for the middleware
-        document.cookie = `auth-token=${token}; path=/; max-age=${60 * 60 * 24 * 7}`; // 7 days
+        document.cookie = `auth-token=${data.token}; path=/; max-age=${60 * 60 * 24 * 7}`; // 7 days
+        
+        return {
+          success: true,
+          user: data.user,
+          token: data.token
+        };
+      }
+      
+      // This is a mock implementation for development purposes
+      // In production, this should be replaced with actual authentication logic
+      if (credentials.email === 'admin@example.com' && credentials.password === 'password') {
+        const token = `auth-token-${Math.random().toString(36).substring(2, 15)}`;
+        
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('auth-token', token);
+          document.cookie = `auth-token=${token}; path=/; max-age=${60 * 60 * 24 * 7}`; // 7 days
+        }
+        
+        return {
+          success: true,
+          user: {
+            email: 'admin@example.com',
+            name: 'Admin User',
+            role: 'admin'
+          },
+          token
+        };
       }
       
       return {
-        success: true,
-        user: {
-          email: user.email,
-          name: user.name,
-          role: user.role
-        },
-        token
+        success: false,
+        message: 'Invalid email or password'
       };
     } catch (error) {
       console.error('Login error:', error);
@@ -109,27 +113,32 @@ export const authService = {
   // Verify token and get user
   verifyToken: async (token: string): Promise<AuthUser | null> => {
     try {
-      await connectToDatabase();
-      
-      // Get Staff model (handles both client and server side)
-      let staffModel: mongoose.Model<IStaff>;
-      if (typeof (Staff as any).getStaffModel === 'function') {
-        staffModel = await (Staff as any).getStaffModel();
-      } else {
-        staffModel = Staff as mongoose.Model<IStaff>;
+      // In a client-side environment, we need to call an API endpoint
+      if (typeof window !== 'undefined') {
+        const response = await fetch('/api/auth/verify', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+          },
+        });
+        
+        if (!response.ok) return null;
+        
+        const data = await response.json();
+        return data.user || null;
       }
       
-      // For now, we'll just find a user by email from the token
-      // In a real app with JWT, you would decode the token and extract the user ID
-      const user = await staffModel.findOne({ email: 'admin@example.com' });
+      // This is a mock implementation for development purposes
+      // In production, this should verify the token properly
+      if (token && token.startsWith('auth-token-')) {
+        return {
+          email: 'admin@example.com',
+          name: 'Admin User',
+          role: 'admin'
+        };
+      }
       
-      if (!user) return null;
-      
-      return {
-        email: user.email,
-        name: user.name,
-        role: user.role
-      };
+      return null;
     } catch (error) {
       console.error('Token verification error:', error);
       return null;

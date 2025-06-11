@@ -7,11 +7,11 @@ connectToDatabase();
 
 // GET a single student by ID
 export async function GET(
-  request: NextRequest,
-  { params }: { params: { id: string } }
+  request: NextRequest, 
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const id = params.id;
+    const id = (await params).id;
     const student = await Student.findById(id);
     
     if (!student) {
@@ -33,11 +33,11 @@ export async function GET(
 
 // PATCH update a student's information or status
 export async function PATCH(
-  request: NextRequest,
-  { params }: { params: { id: string } }
+  request: NextRequest, 
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const id = params.id;
+    const id = (await params).id;
     const body = await request.json();
     
     // Find the student first to check if it exists
@@ -73,11 +73,11 @@ export async function PATCH(
 
 // PUT disable/enable a student
 export async function PUT(
-  request: NextRequest,
-  { params }: { params: { id: string } }
+  request: NextRequest, 
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const id = params.id;
+    const id = (await params).id;
     const { disabled } = await request.json();
     
     // Find the student first to check if it exists
@@ -114,11 +114,11 @@ export async function PUT(
 
 // DELETE a student
 export async function DELETE(
-  request: NextRequest,
-  { params }: { params: { id: string } }
+  request: NextRequest, 
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const id = params.id;
+    const id = (await params).id;
     
     // Find the student first to check if it exists
     const existingStudent = await Student.findById(id);

@@ -72,8 +72,7 @@ export default function RegistrationForm({ onSuccess, onCancel }: RegistrationFo
   }, []);
   
   // Handle category change
-  const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const categoryName = e.target.value;
+  const handleCategoryChange = (categoryName: string) => {
     setSelectedCategory(categoryName);
     setSelectedSubcategory('');
     setSelectedCourse('');
@@ -89,8 +88,7 @@ export default function RegistrationForm({ onSuccess, onCancel }: RegistrationFo
   };
   
   // Handle subcategory change
-  const handleSubcategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const subcategoryName = e.target.value;
+  const handleSubcategoryChange = (subcategoryName: string) => {
     setSelectedSubcategory(subcategoryName);
     setSelectedCourse('');
     
@@ -304,7 +302,7 @@ export default function RegistrationForm({ onSuccess, onCancel }: RegistrationFo
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <FormField>
             <FormLabel>Course Category</FormLabel>
-            <Select onChange={handleCategoryChange} value={selectedCategory}>
+            <Select onValueChange={handleCategoryChange} value={selectedCategory}>
               <SelectOption value="">Select a category</SelectOption>
               {coursesData?.categories.map((category, index) => (
                 <SelectOption key={index} value={category.name}>
@@ -317,7 +315,7 @@ export default function RegistrationForm({ onSuccess, onCancel }: RegistrationFo
           {selectedCategory && coursesData?.categories.find(cat => cat.name === selectedCategory)?.subcategories && (
             <FormField>
               <FormLabel>Subcategory</FormLabel>
-              <Select onChange={handleSubcategoryChange} value={selectedSubcategory}>
+              <Select onValueChange={handleSubcategoryChange} value={selectedSubcategory}>
                 <SelectOption value="">Select a subcategory</SelectOption>
                 {coursesData?.categories
                   .find(cat => cat.name === selectedCategory)
@@ -333,7 +331,7 @@ export default function RegistrationForm({ onSuccess, onCancel }: RegistrationFo
           <FormField>
             <FormLabel>Course</FormLabel>
             <Select 
-              onChange={(e) => setSelectedCourse(e.target.value)}
+              onValueChange={(value) => setSelectedCourse(value)}
               value={selectedCourse}
               disabled={availableCourses.length === 0}
             >
@@ -354,7 +352,7 @@ export default function RegistrationForm({ onSuccess, onCancel }: RegistrationFo
           <FormField>
             <FormLabel>Preferred Study Center</FormLabel>
             <Select 
-              onChange={(e) => setFormData({...formData, preferredStudyCenter: e.target.value})}
+              onValueChange={(value) => setFormData({...formData, preferredStudyCenter: value})}
               value={formData.preferredStudyCenter}
             >
               <SelectOption value="">Select a study center</SelectOption>

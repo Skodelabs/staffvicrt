@@ -45,39 +45,44 @@ export default function Navbar() {
           </Link>
         </div>
         <nav className="hidden flex-1 items-center space-x-4 md:flex">
-          <Link 
-            href="/"
-            className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-              pathname === "/" ? "text-blue-600" : "text-gray-600"
-            }`}
-          >
-            Home
-          </Link>
-          <Link 
-            href="/student/register"
-            className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-              pathname === "/student/register" ? "text-blue-600" : "text-gray-600"
-            }`}
-          >
-            Registration
-          </Link>
-          <Link 
-            href="/student/certificate"
-            className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-              pathname === "/student/certificate" ? "text-blue-600" : "text-gray-600"
-            }`}
-          >
-            Certificate Upload
-          </Link>
-          {isLoggedIn && (
+          {!isLoggedIn ? (
+            // Navigation links for logged out users
             <Link 
-              href="/admin/applications"
+              href="/"
               className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                pathname === "/admin/applications" ? "text-blue-600" : "text-gray-600"
+                pathname === "/" ? "text-blue-600" : "text-gray-600"
               }`}
             >
-              Applications
+              Home
             </Link>
+          ) : (
+            // Navigation links for logged in users
+            <>
+              <Link 
+                href="/dashboard"
+                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                  pathname === "/dashboard" ? "text-blue-600" : "text-gray-600"
+                }`}
+              >
+                Dashboard
+              </Link>
+              <Link 
+                href="/student/register"
+                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                  pathname === "/student/register" ? "text-blue-600" : "text-gray-600"
+                }`}
+              >
+                Registration
+              </Link>
+              <Link 
+                href="/student/applications"
+                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                  pathname === "/student/applications" ? "text-blue-600" : "text-gray-600"
+                }`}
+              >
+                Applications
+              </Link>
+            </>
           )}
         </nav>
         <div className="flex items-center space-x-4">

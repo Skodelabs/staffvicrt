@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
     const search = searchParams.get('search');
     const showDisabled = searchParams.get('showDisabled') === 'true';
     
-    let query: any = {};
+    const query: any = {};
     
     // Filter by disabled status
     // By default, only show non-disabled students unless explicitly requested

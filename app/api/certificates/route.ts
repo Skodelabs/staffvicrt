@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
     const studentId = searchParams.get('studentId');
     const nic = searchParams.get('nic');
     
-    let query: any = {};
+    const query: any = {};
     
     // Apply filters if provided
     if (status) {

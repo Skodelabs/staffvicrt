@@ -1,22 +1,48 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import StudentList from '@/components/student/StudentList';
+import StudentTable from '@/components/StudentTable';
 import RegistrationForm from '@/components/student/RegistrationForm';
 
 
 
 export default function StudentRegistrationPage() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [students, setStudents] = useState([]);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
+  
+  // Fetch students data
+  const fetchStudents = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('/api/students');
+      const result = await response.json();
+      
+      if (result.success) {
+        setStudents(result.data);
+      } else {
+        console.error('Failed to load students');
+      }
+    } catch (error) {
+      console.error('Error fetching students:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Load students on component mount
+  useEffect(() => {
+    fetchStudents();
+  }, []);
   
   const handleRegistrationSuccess = () => {
     setIsDialogOpen(false);
-    // Refresh the page to show the updated student list
-    window.location.reload();
+    // Refresh the student list instead of reloading the page
+    fetchStudents();
   };
 
   return (
@@ -41,7 +67,11 @@ export default function StudentRegistrationPage() {
       
       <div className="bg-white rounded-lg shadow-sm p-6">
         <h2 className="text-xl font-semibold mb-4">Registered Students</h2>
-        <StudentList />
+        <StudentTable 
+          students={students} 
+          loading={loading} 
+          onRefresh={fetchStudents} 
+        />
       </div>
     </div>
   );

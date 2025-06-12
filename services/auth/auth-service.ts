@@ -14,7 +14,7 @@ export interface AuthUser {
 }
 
 export interface AuthResponse {
-  success: boolean;
+  success: boolean; 
   user?: AuthUser;
   token?: string;
   message?: string;
@@ -59,7 +59,7 @@ export const authService = {
       
       // This is a mock implementation for development purposes
       // In production, this should be replaced with actual authentication logic
-      if (credentials.email === 'admin@example.com' && credentials.password === 'password') {
+      if (credentials.email === 'admin@example.com' && credentials.password === 'password123') {
         const token = `auth-token-${Math.random().toString(36).substring(2, 15)}`;
         
         if (typeof window !== 'undefined') {
